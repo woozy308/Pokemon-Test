@@ -1,10 +1,15 @@
 # Pokemon-Test
 
 # About
-This code is a demonstration of a RPG-like turn-based combat system via Java programming heavily inspired and based off of the many early Pokemon games.
+This code is a demonstration of a RPG-like turn-based combat system via Java programming heavily inspired and based off of the many early Pokemon games. I started on this program sometime in February of 2025, and have been only occasionally adding more or refurbishing the program since. It's not the most beautiful program out there, but it was a nice brain refresher after a break from Java classes. Please note that there will be many bugs and various errors within the program.
 
 # Features
-This program contains a 
+Notably, this program utilizes:
+ - lots of loops and nested loops (using while, if, for)
+ - application of objects and called functions
+ - wide usage of RNG using Java's Random
+ - and much more
 
 # Additional Notes
-nil
+This program is directly inspired from Pokemon. All credits reserved to Nintendo and the Pokemon franchise.
+Created on intelliJ using Java.
