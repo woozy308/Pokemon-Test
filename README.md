@@ -1,4 +1,5 @@
 # Pokemon-Test
+Coded by woozy308.
 
 # About
 This code is a demonstration of a RPG-like turn-based combat system via Java programming heavily inspired and based off of the many early Pokemon games. I started on this program sometime in February of 2025, and have been only occasionally adding more or refurbishing the program since. It's not the most beautiful program out there, but it was a nice brain refresher after a break from Java classes. Please note that there will be many bugs and various errors within the program.
