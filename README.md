@@ -13,6 +13,18 @@ Notably, this program utilizes:
  - many fall back failsafes in case of unaccepted or nil values that may be inputted
  - and much, much, more!
 
-# Additional Notes
+# Recent Updates:
+ - New introduction! Professor Birch has been added to give you the realistic Pokemon introductionary feel.
+ - Choosing your specific starter feels more meaningful and important with an improved type effectiveness chart!
+ - Battle introduction and sequence with your Rival has been refreshed!
+
+# Upcoming:
+ - New introduction! Professor Birch has been added to give you the realistic Pokemon introductionary feel.
+ - Choosing your specific starter feels more meaningful and important with an improved type effectiveness chart!
+ - Battle introduction and sequence with your Rival has been refreshed!
+
+
+
+# Credits:
 This program is directly inspired from Pokemon. All credits reserved to Nintendo and the Pokemon franchise.
 Created on intelliJ in Java.
