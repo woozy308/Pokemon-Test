@@ -7,7 +7,7 @@ This code is a demonstration of a RPG-like turn-based combat system via Java pro
 
 
 # Key Note:
-Please ensure that if you test this project that you test the **latest updated branch**, not the base.
+Please ensure that if you test this project that you test the **latest updated branch**, *not the "stock-base"*. (Stock-base is for reference and program growth)
 
 
 # Features
