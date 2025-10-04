@@ -8,6 +8,7 @@ This code is a demonstration of a RPG-like turn-based combat system via Java pro
 
 # Key Note:
 Please ensure that if you test this project that you test the **latest updated branch**, *not the "stock-base"*. (Stock-base is for reference and program growth)
+
 Additionally, please note that the wild encounter at the current moment is a fight against a randomized starter, with the player having access to an overpowered same-type attack move as a current demo. Whoops!
 
 
