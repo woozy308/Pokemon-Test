@@ -8,6 +8,7 @@ This code is a demonstration of a RPG-like turn-based combat system via Java pro
 
 # Key Note:
 Please ensure that if you test this project that you test the **latest updated branch**, *not the "stock-base"*. (Stock-base is for reference and program growth)
+Additionally, please note that the wild encounter at the current moment is a fight against a randomized starter, with the player having access to an overpowered same-type attack move as a current demo. Whoops!
 
 
 # Features
@@ -16,7 +17,8 @@ Notably, this program utilizes:
  - application of objects and called functions
  - large usage of Java's built-in randomizer
  - user choice input for many applications within, such as name and starter choice
- - many fall back failsafes in case of unaccepted or nil values that may be inputted
+ - wide usage of fallback failsafes in the case of unaccepted or nil input values
+ - Randomizer within can also auto-determine and set things for the player if the player has no input
  - and much, much, more!
    
 
@@ -31,7 +33,7 @@ Notably, this program utilizes:
  - Seperate battle class for organization of the main (this will allow for more battles)
  - More wild Pokemon to battle of different types (for demo purposes)
  - Next Rival fight
- - Perhaps a Gym battle against Roxanne, the Rock-type gym leader of Rustboro City.
+ - Perhaps a Gym battle against Roxanne, the Rock-type gym leader of Rustboro City (very Emerald inspired).
 
 
 # How to Run:
