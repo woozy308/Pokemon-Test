@@ -54,6 +54,8 @@ Using Linux/UNIX terminal:
 # Credits:
 All code is made by @woozy308. For any inquiries or questions, please do not hesitate to message me and I will get right back to you.
 
+I love feedback! Please feel free to message me or give me your honest thoughts and criticism! Once again, thank you for downloading or trying my project.
+
 This program is directly inspired from Pokemon (specifically Pokemon Emerald). 
 
 All credits reserved to Nintendo and the Pokemon franchise.
