@@ -3,7 +3,7 @@ Welcome to the Java coded remake of Pokemon!
 
 
 # About
-This code is a demonstration of a RPG-like turn-based combat system via Java programming heavily inspired and based off of the many early Pokemon games. I started on this program sometime in February of 2025, and have been only occasionally adding more or refurbishing the program since. It's not the most beautiful program out there, but it was a nice brain refresher after a break from Java classes. Please note that there will be many bugs and various errors within the program. I will also release updates every now and then!
+This code is a demonstration of a RPG-like turn-based combat system via Java programming heavily inspired and based off of the many early Pokemon games. I started on this program sometime in February of 2025, and have been only occasionally adding more or refurbishing the program since. It's not the most beautiful program out there, but it is a project that I am quite proud of. Please note that there will be many bugs and various errors within the program. I will also release updates every now and then, so I hope that you will enjoy this project!
 
 
 # Key Note:
@@ -30,17 +30,25 @@ Notably, this program utilizes:
 
 
 # Upcoming:
- - Battling system will be freshened up more
- - Seperate battle class for organization of the main (this will allow for more battles)
- - More wild Pokemon to battle of different types (for demo purposes)
+ - Battling system set to be reorganized and possibly overhauled
+ - Seperate battle class from the Main class (this will allow for more battles)
+ - More wild Pokemon to battle of different types
+ - PokeDex, type-charting
+ - Speaking of type-charting, more typings outside of Water, Fire, Grass, and Steel
  - Next Rival fight
- - Perhaps a Gym battle against Roxanne, the Rock-type gym leader of Rustboro City (very Emerald inspired).
+ - Future Gym battles
+ - Possible C++ adaptation (which I am currently studying)
 
 
 # How to Run:
+Using a Java IDE:
  - Simply copy and paste the raw code from each class into a Java class of your own in any IDE (preferrably IntelliJ)
+   (NOTE: you can also download the files and insert them into the .src files)
  - Ensure that each class is properly named the same as they are in the code
  - Run the code and enjoy!
+   
+Using Linux/UNIX terminal:
+ - Coming soon...
 
    
 # Credits:
