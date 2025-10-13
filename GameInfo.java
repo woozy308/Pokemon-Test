@@ -65,12 +65,16 @@ public class GameInfo {
         System.out.println("Please note that this introduction is still under revision!");
     }
 
-    public void spacer() {      // this is formatting //
+    // Spacer formatting //
+
+    public void spacer() {
         System.out.println();
         System.out.println();
         System.out.println();
     }
 
+    // Getters and Setters //
+    
     public int getRivalID() {
         return rivalID;
     }
