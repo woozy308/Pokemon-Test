@@ -3,6 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
 
         boolean playing = true;
@@ -10,57 +11,32 @@ public class Main {
         int rivalID;
         String name;
         String rivalName;
+        String gender;
 
         Scanner keyboard = new Scanner(System.in);
         Random random = new Random();
 
         while (playing) {
 
-            System.out.println("Please insert your name.");
-            name = keyboard.next();
+            GameInfo start = new GameInfo();
+            start.Introduction();
+            startID = start.getStartID();
+            rivalID = start.getRivalID();
+            name = start.getName();
+            rivalName = start.getRivalName();
+            gender = start.getGender();
 
-            System.out.println("Please insert your rival's name.");
-            rivalName = keyboard.next();
+            start.spacer();
 
-            if (rivalName.equals(name)) {
-                rivalName = "Johanna";
-            }
-
-            System.out.println();
-            System.out.println();
-            System.out.println();
-
-            System.out.println("Pick your starter!");
-            System.out.println("1- Treecko (Grass)");
-            System.out.println("2- Torchic (Fire)");
-            System.out.println("3- Mudkip (Water)");
-            startID = keyboard.nextInt();
-            if (startID > 3 || startID < 1) {
-                startID = random.nextInt(3) + 1; // randomizer for starter //
-
-            }
             Pokemon starter = new Pokemon(25, 3,startID);
             starter.print();
 
-            System.out.println();
-            System.out.println();
-            System.out.println();
+            start.spacer();
 
             System.out.println(rivalName + ": HEY!");
             System.out.println("It's your rival, " + rivalName + ".");
             System.out.println(rivalName + ": I see you got your first Pokemon, " + name + ". Come on, let's BATTLE!");
-            if (startID == 1) {
-                rivalID = 2;
-            }
-            else if (startID == 2) {
-                rivalID = 3;
-            }
-            else if (startID == 3) {
-                rivalID = 1;
-            }
-            else {
-                rivalID = 2;
-            }
+
             Pokemon rivalpkmn = new Pokemon(25, 3, rivalID);
 
             System.out.println();
@@ -193,7 +169,7 @@ public class Main {
             String STABMove1;
 
             if (starter.getTyping().equals("Grass")) {
-               STABMove1 = "Leaf Blade";
+                STABMove1 = "Leaf Blade";
             }
             else if (starter.getTyping().equals("Fire")) {
                 STABMove1 = "Inferno";
