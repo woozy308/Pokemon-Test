@@ -7,9 +7,7 @@ This code is a demonstration of a RPG-like turn-based combat system via Java pro
 
 
 # Key Note:
-Please ensure that if you test this project that you test the **latest updated branch**, *not the "stock-base"*. The *"stock-base"* is outdated and serves as a base model of my project!
-
-Additionally, please note that the wild encounter at the current moment is a fight against a randomized starter, with the player having access to an overpowered same-type attack move as a current demo. Whoops!
+Please ensure that if you test this project that you test the **latest version**, *not the "archive version"*. The *"archive version"* is outdated and serves as a base model of my project!
 
 
 # Features
@@ -26,15 +24,17 @@ Notably, this program utilizes:
 # Recent Updates:
  - New introduction! Professor Birch has been added to give you the realistic Pokemon introductionary feel.
  - Choosing your specific starter feels more meaningful and important with an improved type effectiveness chart!
- - Battle introduction and sequence with your Rival has been refreshed!
+ - Wild encounters are randomized and continuous!
+ - New introduction dialogue with the rival!
+ - Battles have been refreshed, with "neutral" damage getting its own dialogue!
 
 
 # Upcoming:
  - Battling system set to be reorganized and possibly overhauled
  - Seperate battle class from the Main class (this will allow for more battles)
- - More wild Pokemon to battle of different types
- - PokeDex, type-charting
- - Speaking of type-charting, more typings outside of Water, Fire, Grass, and Steel
+ - Even more wild Pokemon to battle of different types
+ - PokeDex (national, regional)
+ - Improved and effective type-charting
  - Next Rival fight
  - Future Gym battles
  - Possible C++ adaptation (which I am currently studying)
