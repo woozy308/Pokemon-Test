@@ -1,4 +1,3 @@
-
 public class Pokemon {
 
     public String name;
@@ -7,12 +6,7 @@ public class Pokemon {
     public int level;
     public int index;
     public String typing;
-    public int hpNew;
-
-    public Pokemon() {
-
-    }
-
+ 
     public Pokemon(int hp, int level, int index) {
         this.hp = hp;
         currenthp = hp;
@@ -31,14 +25,42 @@ public class Pokemon {
             name = "Mudkip";
             typing = "Water";
         }
-        else {
-            name = "Skarmory";
-            typing = "Steel";
+        else { // wild encounters! //
+            switch (index) {
+                case 4:
+                    name = "Weedle";
+                    typing = "Bug";
+                    break;
+                case 5:
+                    name = "Pidgey";
+                    typing = "Flying";
+                    break;
+                case 6:
+                    name = "Sentret";
+                    typing = "Normal";
+                    break;
+                case 7:
+                    name = "Sunflora";
+                    typing = "Grass";
+                    break;
+                case 8:
+                    name = "Marill";
+                    typing = "Water";
+                    break;
+                case 9:
+                    name = "Slugma";
+                    typing = "Fire";
+                    break;
+                default:
+                    name = "Skarmory";
+                    typing = "Steel";
+                    break;
+            }
         }
     }
 
     public boolean isSuperEffective(int index, int rivalIndex) {
-        if (index == 1 && rivalIndex == 3) {
+        if (index == 1 && (rivalIndex == 3)) {
             return true;
         }
         else if (index == 2 && rivalIndex == 1) {
@@ -88,6 +110,7 @@ public class Pokemon {
         return name;
     }
 
+    // setters/getters //
     public int getCurrenthp() {
         return currenthp;
     }
@@ -112,6 +135,4 @@ public class Pokemon {
     public int getIndex() {
         return index;
     }
-
 }
-
