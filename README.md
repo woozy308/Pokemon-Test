@@ -28,9 +28,11 @@ Notably, this program utilizes:
  - New introduction dialogue with the rival!
  - Battles have been refreshed, with "neutral" damage getting its own dialogue!
  - New walk system through Petalburg Woods!
+ - New menu prompts for entering Petalburg City!
 
 
 # Upcoming:
+ - Menu during battles (Run, Items, Battle, Catch)
  - Battling system set to be reorganized and overhauled
  - Seperate battle class from the Main class (this will allow for more battles)
  - Even more wild Pokemon to battle of different types
@@ -38,7 +40,7 @@ Notably, this program utilizes:
  - Improved and effective type-charting
  - Next Rival fight
  - Future Gym battles
- - C++ version of this program
+ - Pokemon C++ Test
 
 
 # How to Run:
@@ -49,14 +51,16 @@ Using a Java IDE:
  - Run the code and enjoy!
    
 Using Linux/UNIX terminal:
- - Coming soon...
+ - This program can also be run from a Linux or Unix terminal!
+ - Download each file presented in the latest-version
+ - In Unix, use the "bash" and "out" commands to connect all files together!
+ - (Coming soon...)
 
-   
+
 # Credits:
 All code is made by @woozy308 (jadon1@uw.edu). For any inquiries or questions, please do not hesitate to message me and I will get right back to you.
 
-Thank you for downloading or trying my project. You have my gratitude!
-
+Thank you for downloading and testing my project, I hope that you have an enjoyable time!
 This program is directly inspired from Pokemon (specifically Pokemon Emerald). 
 
 All credits reserved to Nintendo and the Pokemon franchise.
