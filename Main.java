@@ -1,3 +1,5 @@
+package CS143.jtnguyen5;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -305,8 +307,10 @@ public class Main {
                     travelWild = false;
                 }
             }
+            System.out.println(name + " made it to Petalburg City!");
+            System.out.println("Where will " + name + " go?");
+            start.townMap("Petalburg");
 
-            System.out.println("Welcome to Petalburg City!");
             System.out.println("End of DEMO!");
             playing = false;
 

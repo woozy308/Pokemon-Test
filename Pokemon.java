@@ -1,3 +1,5 @@
+package CS143.jtnguyen5;
+
 public class Pokemon {
 
     public String name;
@@ -6,7 +8,7 @@ public class Pokemon {
     public int level;
     public int index;
     public String typing;
- 
+
     public Pokemon(int hp, int level, int index) {
         this.hp = hp;
         currenthp = hp;

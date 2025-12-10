@@ -1,3 +1,5 @@
+package CS143.jtnguyen5;
+
 import java.util.Random;
 import java.util.Scanner;
     
@@ -44,7 +46,7 @@ public class GameInfo {
 
         System.out.println("I see. Your rival is named " + rivalName + "!");
         System.out.println("Now, here's the fun part- you get to choose your very own first Pokemon!");
-        System.out.println("Make sure you pick wisely, you only get one and one chance to pick them!");
+        System.out.println("Make sure you pick wisely, you only get one chance to pick whichever!");
         System.out.println("1- Treecko (Grass)");
         System.out.println("2- Torchic (Fire)");
         System.out.println("3- Mudkip (Water)");
@@ -64,7 +66,10 @@ public class GameInfo {
             rivalID = 1;
             System.out.println("So you have chosen Mudkip, the Water Pokemon. Great choice!");
         }
-        System.out.println("Please note that this introduction is still under revision!");
+        System.out.println("You received a PokeBall from Professor Birch!");
+        System.out.println("Here's also another little gift. Be safe out there!");
+        System.out.println("You were given a Potion by Professor Birch!");
+        System.out.println("Good luck, and happy hunting! I hope to see you in the big leagues someday!");
     }
 
     // Spacer formatting //
@@ -82,6 +87,15 @@ public class GameInfo {
         System.out.println("???: What's your name? Mine's " + rivalName +".");
         System.out.println(rivalName + ": Ah, your name is " + name + "!");
         System.out.println(rivalName + ": Well, I see you've got a new Pokemon. WELL, so do I! Let's BATTLE!!!");
+    }
+
+    public void townMap(String townName) {
+        System.out.println("1- PokeMart");
+        System.out.println("2- PokeCenter");
+        System.out.println("3- " + townName + " Gym");
+        System.out.println("4- Go back");
+
+        System.out.println("Under Work");
     }
 
     // Getters and Setters //
