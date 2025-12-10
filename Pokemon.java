@@ -1,5 +1,3 @@
-package CS143.jtnguyen5;
-
 public class Pokemon {
 
     public String name;
@@ -137,4 +135,5 @@ public class Pokemon {
     public int getIndex() {
         return index;
     }
+
 }
