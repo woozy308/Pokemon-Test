@@ -1,4 +1,4 @@
-# Pokemon Java Test
+# Pokemon Test (Java)
 Welcome to the Java coded remake of Pokemon!
 
 
@@ -7,7 +7,9 @@ This code is a demonstration of a RPG-like turn-based combat system via Java pro
 
 
 # Key Note:
-Please ensure that if you test this project that you test the **latest version**, *not the "archived version"*. The *"archived version"* is outdated and serves as a base model of my project!
+I first created this project in Java, although I created a C++ version of the project in the **"C++-Version"** branch. I would highly recommend trying out the original Java model out first for consistency!
+
+Please ensure that if you test this project that you test the **"Java-Version-(Original)"** or the **"C++-Version"**, *not the "archived version"*. The *"archived version"* is outdated and serves as a base model of my project!
 
 
 # Features
