@@ -1,5 +1,5 @@
-# Pokemon Java Test
-Welcome to the Java coded remake of Pokemon!
+# Pokemon Test (C++)
+Welcome to the C++ coded remake of Pokemon!
 
 
 # About
