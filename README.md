@@ -53,10 +53,7 @@ Using a Java IDE:
  - Run the code and enjoy!
    
 Using Linux/UNIX terminal:
- - This program can also be run from a Linux or Unix terminal!
- - Download each file presented in the latest-version
- - In Unix, use the "bash" and "out" commands to connect all files together!
- - (Coming soon...)
+ - Coming soon...
 
 
 # Credits:
