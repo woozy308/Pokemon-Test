@@ -7,14 +7,14 @@ This code is a demonstration of a RPG-like turn-based combat system via Java pro
 
 
 # Key Note:
-Please ensure that if you test this project that you test the **latest version**, *not the "archived version"*. The *"archived version"* is outdated and serves as a base model of my project!
+Please note that this is the latest version for the C++ variant of my Pokemon Testing project. The included branch files are **NOT** in Java, but C++. 
 
 
 # Features
 Notably, this program utilizes:
  - lots of loops and nested loops (using while, if, for)
  - application of objects and called functions
- - large usage of Java's built-in randomizer
+ - usage of C++'s rand
  - user choice input for many applications within, such as name and starter choice
  - wide usage of fallback failsafes in the case of unaccepted or nil input values
  - Randomizer within can also auto-determine and set things for the player if the player has no input
@@ -40,13 +40,12 @@ Notably, this program utilizes:
  - Improved and effective type-charting
  - Next Rival fight
  - Future Gym battles
- - Pokemon C++ Test
 
 
 # How to Run:
-Using a Java IDE:
- - Simply copy and paste the raw code from each class into a Java class of your own in any IDE (preferrably IntelliJ)
-   (NOTE: you can also download the files and insert them into the .src files)
+Using a C++ IDE:
+ - Simply copy and paste the raw code from each class into a C++ class of your own in any IDE (preferrably Visual Studios 2022)
+   (NOTE: you can also download the files and insert them into the .cpp files)
  - Ensure that each class is properly named the same as they are in the code
  - Run the code and enjoy!
    
@@ -65,4 +64,4 @@ This program is directly inspired from Pokemon (specifically Pokemon Emerald).
 
 All credits reserved to Nintendo and the Pokemon franchise.
 
-Created on intelliJ in Java.
+Originally created on intelliJ in Java and rewritten in C++ using Visual Studios 2022.
