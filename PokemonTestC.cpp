@@ -1,4 +1,4 @@
-#include <iostream>
+F#include <iostream>
 #include <string>
 #include <cstdlib>
 
@@ -57,16 +57,16 @@ int main()
                 int hitChance = random.nextInt(10);
                 int critChance = random.nextInt(24);
                 if (hitChance == 5) {
-                    System.out.println(starter.getName() + "'s attack missed!");
+                    cout << starter.getName() <<  "'s attack missed!" << endl;
                 }
                 else if (critChance == 6) {
                     damage = (((((2 * starter.getLevel()) / 5) + 2) * 35) / 50) * 2;
-                    System.out.println("A critical hit!");
+                    cout << "A critical hit!" << endl;
                     rivalpkmn.setCurrenthp(rivalpkmn.getCurrenthp() - damage);
                 }
                 else {
                     damage = ((((2 * starter.getLevel()) / 5) + 2) * 35) / 50;
-                    System.out.println("Thwack! (Neutral damage!)");
+                    cout << "Thwack! (Neutral damage!)" << endl;
                     rivalpkmn.setCurrenthp(rivalpkmn.getCurrenthp() - damage);
                 }
             }
@@ -357,4 +357,5 @@ int main()
         return 0;
 
     }
+
 }
