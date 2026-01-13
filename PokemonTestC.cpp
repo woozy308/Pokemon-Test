@@ -1,4 +1,4 @@
-F#include <iostream>
+#include <iostream>
 #include <string>
 #include <cstdlib>
 
@@ -52,148 +52,169 @@ int main()
             cout << "1- Tackle (35 damage, 90 accuracy)" << endl;
             cout << "2- Pound (50 damage, 80 accuracy)" << endl;
             cin >> moveChoice;
-            if (moveChoice == 1) {
+            if (moveChoice == 1) 
+            {
                 cout << starter.getName() << " used TACKLE!" << endl;
-                int hitChance = random.nextInt(10);
-                int critChance = random.nextInt(24);
-                if (hitChance == 5) {
-                    cout << starter.getName() <<  "'s attack missed!" << endl;
+                int hitChance = rand() % 10;
+                int critChance = rand() % 24;
+                if (hitChance == 5) 
+                {
+                    cout << starter.getName() << "'s attack missed!" << endl;
                 }
-                else if (critChance == 6) {
+                else if (critChance == 6) 
+                {
                     damage = (((((2 * starter.getLevel()) / 5) + 2) * 35) / 50) * 2;
                     cout << "A critical hit!" << endl;
                     rivalpkmn.setCurrenthp(rivalpkmn.getCurrenthp() - damage);
                 }
-                else {
+                else 
+                {
                     damage = ((((2 * starter.getLevel()) / 5) + 2) * 35) / 50;
                     cout << "Thwack! (Neutral damage!)" << endl;
                     rivalpkmn.setCurrenthp(rivalpkmn.getCurrenthp() - damage);
                 }
             }
             else {
-                System.out.println(starter.getName() + " used POUND!");
-                int hitChance = random.nextInt(10);
-                int critChance = random.nextInt(24);
-                if (hitChance == 5 || hitChance == 6) {
-                    System.out.println(starter.getName() + "'s attack missed!");
+                cout << starter.getName() << " used POUND!" << endl;
+                int hitChance = rand() % 10;
+                int critChance = rand() % 24;
+                if (hitChance == 5 || hitChance == 6) 
+                {
+                    cout << starter.getName() << "'s attack missed!" << endl;
                 }
-                else if (critChance == 6) {
+                else if (critChance == 6) 
+                {
                     damage = (((((2 * starter.getLevel()) / 5) + 2) * 50) / 50) * 2;
-                    System.out.println("A critical hit!");
+                    cout << "A critical hit!" << endl;
                     rivalpkmn.setCurrenthp(rivalpkmn.getCurrenthp() - damage);
                 }
-                else {
+                else 
+                {
                     damage = ((((2 * starter.getLevel()) / 5) + 2) * 50) / 50;
-                    System.out.println("Thwack! (Neutral damage!)");
+                    cout << "Thwack! (Neutral damage!)" << endl;
                     rivalpkmn.setCurrenthp(rivalpkmn.getCurrenthp() - damage);
                 }
             }
 
-            if (rivalpkmn.getCurrenthp() < 0) {
+            if (rivalpkmn.getCurrenthp() < 0) 
+            {
                 rivalpkmn.setCurrenthp(0);
             }
 
             rivalpkmn.status();
-            System.out.println();
+            cout << endl;
 
-            int enemyMoveChance = random.nextInt(2);
-            int enemyHitChance = random.nextInt(10);
-            int enemyCritChance = random.nextInt(24);
+            int enemyMoveChance = rand() % 2;
+            int enemyHitChance = rand() % 24;
+            int enemyCritChance = rand() % 24;
             if (enemyMoveChance == 0) {
-                System.out.println("Foe " + rivalpkmn.getName() + " used TACKLE!");
-                if (enemyHitChance == 5 || enemyHitChance == 6) {
-                    System.out.println(rivalpkmn.getName() + "'s attack missed!");
+                cout << "Foe " << rivalpkmn.getName() << " used TACKLE!" << endl;
+                if (enemyHitChance == 5 || enemyHitChance == 6) 
+                {
+                    cout << rivalpkmn.getName() << "'s attack missed!" << endl;
                 }
-                else if (enemyCritChance == 6) {
+                else if (enemyCritChance == 6) 
+                {
                     damage = (((((2 * rivalpkmn.getLevel()) / 5) + 2) * 35) / 50) * 2;
-                    System.out.println("A critical hit!");
+                    cout << "A critical hit!" << endl;
                     starter.setCurrenthp(starter.getCurrenthp() - damage);
                 }
-                else {
+                else 
+                {
                     damage = ((((2 * rivalpkmn.getLevel()) / 5) + 2) * 35) / 50;
-                    System.out.println("Thwack! (Neutral damage!)");
+                    cout << "Thwack! (Neutral damage!)" << endl;
                     starter.setCurrenthp(starter.getCurrenthp() - damage);
                 }
             }
-            else {
-                System.out.println("Foe " + rivalpkmn.getName() + " used POUND!");
-                int hitChance = random.nextInt(10);
-                int critChance = random.nextInt(24);
-                if (hitChance == 5 || hitChance == 6) {
-                    System.out.println(rivalpkmn.getName() + "'s attack missed!");
+            else 
+            {
+                cout << "Foe " << rivalpkmn.getName() << " used POUND!" << endl;
+                int hitChance = rand() % 10;
+                int critChance = rand() % 24;
+                if (hitChance == 5 || hitChance == 6) 
+                {
+                    cout << rivalpkmn.getName() << "'s attack missed!" << endl;
                 }
-                else if (critChance == 6) {
+                else if (critChance == 6) 
+                {
                     damage = (((((2 * starter.getLevel()) / 5) + 2) * 50) / 50) * 2;
-                    System.out.println("A critical hit!");
+                    cout << "A critical hit!" << endl;
                     starter.setCurrenthp(starter.getCurrenthp() - damage);
                 }
                 else {
                     damage = ((((2 * rivalpkmn.getLevel()) / 5) + 2) * 50) / 50;
-                    System.out.println("Thwack! (Neutral damage!)");
+                    cout << "Thwack!(Neutral damage!)" << endl;
                     starter.setCurrenthp(starter.getCurrenthp() - damage);
                 }
             }
 
-            if (starter.getCurrenthp() < 0) {
+            if (starter.getCurrenthp() < 0) 
+            {
                 starter.setCurrenthp(0);
             }
 
             starter.status();
-            System.out.println();
+            cout << endl;
 
-            if (rivalpkmn.getCurrenthp() <= 0) {
-                System.out.println("Foe " + rivalpkmn.getName() + " fainted!");
-                System.out.println(rivalName + ": WHAT?! How did I lose?!");
-                System.out.println(name + " received $500 for winning!");
-                System.out.println();
-                System.out.println(rivalName + ": This isn't the last you've heard of me, " + name + "! I'll win against you someday!");
+            if (rivalpkmn.getCurrenthp() <= 0) 
+            {
+                cout << "Foe " << rivalpkmn.getName() << " fainted!" << endl;
+                cout << rivalName << ": WHAT?! How did I lose?!" << endl;
+                cout << name << " received $500 for winning!" << endl;
+                cout << endl;
+                cout << rivalName + ": This isn't the last you've heard of me, " << name << "! I'll win against you someday!" << endl;
                 defeated = true;
             }
-            else if (starter.getCurrenthp() <= 0) {
-                System.out.println(starter.getName() + " fainted!");
-                System.out.println(rivalName + ": HAH! I guess I WON!");
-                System.out.println(rivalName + " received $500 for winning!");
-                System.out.println(name + " whited out!");
-                System.out.println();
-                System.out.println(name + ", thinking quickly, scooped up " + starter.getName() + " and brought " + starter.getName() + " to the Pokemon Center!");
+            else if (starter.getCurrenthp() <= 0) 
+            {
+                cout << starter.getName() << " fainted!" << endl;
+                cout << rivalName << ": HAH! I guess I WON!" << endl;
+                cout << rivalName << " received $500 for winning!" << endl;
+                cout << name << " whited out!" << endl;
+                cout << endl;
+                cout << name << ", thinking quickly, scooped up " << starter.getName() << " and brought " << starter.getName() << " to the Pokemon Center!" << endl;
                 defeated = true;
             }
         } // end of Rival battle #1
 
         defeated = false;
 
-        System.out.println(starter.getName() + " leveled up to level " + (starter.getLevel() + 1) + "!");
+        cout << starter.getName() << " leveled up to level " << (starter.getLevel() + 1) << "!" << endl;
         starter.setNewHP(30);
-        String STABMove1;
+        string STABMove1;
 
-        if (starter.getTyping().equals("Grass")) {
+        if (starter.getTyping() == "Grass")
+        {
             STABMove1 = "Absorb";
         }
-        else if (starter.getTyping().equals("Fire")) {
+        else if (starter.getTyping() == "Fire")
+        {
             STABMove1 = "Ember";
         }
         else {
-            STABMove1 = "Water Gun";
+            STABMove1 = "Water Gun"; // water //
         }
-        System.out.println(starter.getName() + " learned the move " + STABMove1 + "!");
+        cout << starter.getName() << " learned the move " << STABMove1 << "!" << endl;
 
         // petalburg walking //
-        boolean travelWild = true;
-        System.out.println();
-        System.out.println("This area is under demo, please tread with caution for bugs!");
-        System.out.println(name + " entered the Petalburg Woods!");
+        bool travelWild = true;
+        cout << endl;
+
+        cout << "Now, it's time for " << name << "'s journey to begin!" << endl;
+        cout << name << " entered the Petalburg Woods!" << endl;
 
         int totalMoves = 20; // this represents 20 steps to get out //
         int movesMade = 0;
 
         while (travelWild) {
 
-            int wildCounter = random.nextInt(5) + 1;
+            int wildCounter = rand() % 4; // this is about 25% //
 
-            if (wildCounter == 1) {
-                System.out.println("The bush behind " + name + " began to shake!!!");
-                System.out.println();
-                Pokemon randomEncounter = new Pokemon(random.nextInt(16, 28), random.nextInt(2, 7), random.nextInt(3, 9));
+            if (wildCounter == 1) 
+            {
+                cout << "The bush behind " << name << " began to shake!!!" << endl;
+                cout << endl;
+                Pokemon randomEncounter = new Pokemon(28, 4, rand()); // simplified temporarily //
                 System.out.println("A wild " + randomEncounter.getName() + " appeared!");
                 // this has to be outside, or else loop continues! (bug fix: 10/20/2025) //
                 while (!defeated) {
@@ -357,5 +378,4 @@ int main()
         return 0;
 
     }
-
 }
