@@ -1,5 +1,3 @@
-package CS143.jtnguyen5;
-
 public class Pokemon {
 
     public String name;
