@@ -31,6 +31,8 @@ Notably, this program utilizes:
  - Battles have been refreshed, with "neutral" damage getting its own dialogue!
  - New walk system through Petalburg Woods!
  - New menu prompts for entering Petalburg City!
+ - Made major changes to the "fainting" mechanic in the Petalburg Woods.
+ - PokeMart is now accessible!
 
 
 # Upcoming:
@@ -39,10 +41,13 @@ Notably, this program utilizes:
  - Seperate battle class from the Main class (this will allow for more battles)
  - Even more wild Pokemon to battle of different types
  - PokeDex (national, regional)
- - Improved and effective type-charting
+ - Improved and effective type effectiveness utilizing a possible index vector
+ - Revamp of the PokeCenter, PokeMart, and the Gym of each town
+ - Catching wild Pokemon mechanics
  - Next Rival fight
  - Future Gym battles
- - Pokemon C++ Test
+ - C++ friendly version is currently in development!
+ - Planned future Unity/C# version
 
 
 # How to Run:
@@ -59,7 +64,7 @@ Using Linux/UNIX terminal:
 # Credits:
 All code is made by @woozy308 (jadon1@uw.edu). For any inquiries or questions, please do not hesitate to message me and I will get right back to you.
 
-Thank you for downloading and testing my project, I hope that you have an enjoyable time!
+Thank you for downloading and testing my project, I hope that the experience is enjoyable!
 This program is directly inspired from Pokemon (specifically Pokemon Emerald). 
 
 All credits reserved to Nintendo and the Pokemon franchise.
