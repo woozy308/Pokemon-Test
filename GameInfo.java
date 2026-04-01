@@ -1,8 +1,12 @@
+package CS143.jtnguyen5;
 
 import java.util.Random;
 import java.util.Scanner;
     
 public class GameInfo {
+
+    Scanner keyboard = new Scanner(System.in);
+    Random random = new Random();
 
     public String name;
     public String rivalName;
@@ -16,9 +20,6 @@ public class GameInfo {
     }
 
     public void Introduction() {
-        Scanner keyboard = new Scanner(System.in);
-        Random random = new Random();
-
         System.out.println("Ah, I see you're finally awake!");
         System.out.println("Welcome to the island of Hoenn, shared by humans and Pokemon!");
         System.out.println("My name is Professor Birch, and I'm so happy to meet you!");
@@ -28,9 +29,9 @@ public class GameInfo {
         System.out.println("Are you a boy or a girl? (please answer only 'boy' or 'girl')");
         gender = keyboard.next();
 
-        if (gender.equals("boy")) {
+        if (gender.equals("boy") || gender.equals("Boy")) {
             rivalGender = "girl"; // sets Rival to female default //
-        } else if (gender.equals("girl")) {
+        } else if (gender.equals("girl") || gender.equals("Girl")) {
             rivalGender = "boy"; // sets Rival to male default //
         }
 
@@ -83,18 +84,57 @@ public class GameInfo {
         System.out.println("???: Hey, you!");
         System.out.println("A strange, but bumbling " + rivalGender + " runs over to you.");
         System.out.println("???: You must be the new " + gender + " in town.");
-        System.out.println("???: What's your name? Mine's " + rivalName +".");
+        System.out.println("???: What's your name? My name is " + rivalName +".");
         System.out.println(rivalName + ": Ah, your name is " + name + "!");
         System.out.println(rivalName + ": Well, I see you've got a new Pokemon. WELL, so do I! Let's BATTLE!!!");
     }
 
+    // Town Map interactions and the town utilities //
+
     public void townMap(String townName) {
+        int action = 0;
         System.out.println("1- PokeMart");
         System.out.println("2- PokeCenter");
         System.out.println("3- " + townName + " Gym");
         System.out.println("4- Go back");
+        action = keyboard.nextInt();
+
+        switch (action) {
+            case 1:
+                PokeMart();
+                break;
+            case 2:
+                PokeCenter();
+                break;
+            case 3:
+                Gym(townName);
+                break;
+            case 4:
+                goBack();
+                break;
+            default:
+                break;
+        }
 
         System.out.println("Under Work");
+    }
+
+    public void PokeMart() {
+        System.out.println("You entered the PokeMart!");
+        System.out.println("PokeMart Worker: Hello, and welcome to the PokeMart!");
+        System.out.println("PokeMart Worker: How can I help you today?");
+    }
+
+    public void PokeCenter() {
+
+    }
+
+    public void Gym(String townName) {
+
+    }
+
+    public void goBack() {
+
     }
 
     // Getters and Setters //
