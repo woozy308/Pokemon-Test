@@ -1,3 +1,4 @@
+package CS143.jtnguyen5;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -292,6 +293,10 @@ public class Main {
                             System.out.println(starter.getName() + " fainted!");
                             System.out.println(name + " has no more usable Pokemon!");
                             System.out.println(name + " whited out!");
+                            // New outcome of fainting in woods //
+                            System.out.println(name + " carried " + starter + " to the nearest PokeCenter, avoiding any further harm...");
+                            System.out.println("Unfortunately, " + name + " must restart their journey through the Petalburg Woods...");
+                            movesMade = 0;
                             defeated = true;
                         }
                     } // defeat end string //
@@ -310,11 +315,11 @@ public class Main {
             System.out.println("Where will " + name + " go?");
             start.townMap("Petalburg");
 
+            // Demo ending //
             System.out.println("End of DEMO!");
             playing = false;
 
         }
 
     }
-
 }
