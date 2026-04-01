@@ -1,3 +1,5 @@
+package CS143.jtnguyen5;
+
 public class Pokemon {
 
     public String name;
@@ -58,6 +60,9 @@ public class Pokemon {
             }
         }
     }
+
+    // Type match-up effectiveness //
+    // Suggestion: Create a vector for each typing that contains the index of weaknesses and effectiveness //
 
     public boolean isSuperEffective(int index, int rivalIndex) {
         if (index == 1 && (rivalIndex == 3)) {
@@ -135,5 +140,4 @@ public class Pokemon {
     public int getIndex() {
         return index;
     }
-
 }
