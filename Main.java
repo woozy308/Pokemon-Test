@@ -1,3 +1,5 @@
+package CS143.jtnguyen5;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -311,7 +313,13 @@ public class Main {
             }
             System.out.println(name + " made it to Petalburg City!");
             System.out.println("Where will " + name + " go?");
-            start.townMap("Petalburg");
+
+            int townDecision = 0;
+
+            while (townDecision == 0)
+            {
+                start.townMap("Petalburg");
+            }
 
             // Demo ending //
             System.out.println("End of DEMO!");
