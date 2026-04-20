@@ -1,3 +1,5 @@
+package CS143.jtnguyen5;
+
 import java.util.Random;
 import java.util.Scanner;
     
@@ -121,14 +123,29 @@ public class GameInfo {
         System.out.println("You entered the PokeMart!");
         System.out.println("PokeMart Worker: Hello, and welcome to the PokeMart!");
         System.out.println("PokeMart Worker: How can I help you today?");
+        openShop();
     }
+
+        public void openShop()
+        {
+
+        }
+
+        public void purchase(int itemIndex)
+        {
+
+        }
 
     public void PokeCenter() {
 
     }
 
     public void Gym(String townName) {
-
+        System.out.println("You entered the " + townName + " Gym.");
+        int gymTrainersCount;
+        gymTrainersCount = random.nextInt(0, 6);
+        System.out.println("There are currently " + gymTrainersCount + " trainers in the gym.");
+        System.out.println("Continue forward?");
     }
 
     public void goBack() {
